@@ -1,4 +1,4 @@
-import monoose, { model } from 'mongoose';
+import monoose from 'mongoose';
 
 const Schema = monoose.Schema;
 
