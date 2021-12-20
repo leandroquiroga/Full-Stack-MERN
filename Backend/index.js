@@ -21,6 +21,10 @@ server.use(Express.json());
 // Router
 server.use('/', router);
 
-server.listen(4000, () => {
-    console.log('lisntening server 4000')
+// Config localhost and port 
+const host = process.env.host || '0.0.0.0';
+const port = process.env.port || 4000
+
+server.listen((host, port), () => {
+    console.log('The server its running')
 })
