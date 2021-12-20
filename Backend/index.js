@@ -26,5 +26,5 @@ const host = process.env.host || '0.0.0.0';
 const port = process.env.port || 4000
 
 server.listen((host, port), () => {
-    console.log('The server its running')
+    console.log('The server its running');
 })
