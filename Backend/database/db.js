@@ -1,9 +1,14 @@
 import mongoose from "mongoose";
+import dotenv from 'dotenv';
 
-const connectingDB = async ()  => {
+// Enable environment variables
+dotenv.config({ path: 'variables.env' });
+
+const connectingDB = async () => {
     try {
-        const db = await mongoose.connect(process.env.mongodb, {
+        const db = await mongoose.connect('mongodb+srv://root:colorado14@cluster0.rlpyy.mongodb.net/Application?retryWrites=true&w=majority', {
             useNewUrlParser: true,
+            useUnifiedTopology: true,
         });
         console.log(`Connection success ! ${db.connection.name}`)
     } catch (error) {
