@@ -1,0 +1,12 @@
+.main-grid--cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: .9rem;
+    row-gap: 1.1rem;
+    place-content: center;
+    place-items: center;
+}
+
+.main-card--title{
+    font: 400 1rem 'Monserrat', sans-serif;
+}
