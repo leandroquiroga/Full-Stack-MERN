@@ -2,6 +2,7 @@ import Express  from "express";
 import connectingDB from './database/db.js'
 import router from './router/index.js';
 import dotenv from 'dotenv';
+import cors from 'cors';
 
 // Enable environment variables
 dotenv.config({ path: 'variables.env' });
@@ -9,6 +10,16 @@ dotenv.config({ path: 'variables.env' });
 // Creater Server
 const server = Express(); 
 
+// Enable cors
+// const whitelist = ['http://localhost:3000'];
+// const corsOptions = {
+//     origin: (origin, callback) => {
+//         const existe = whitelist.some(dominio => dominio === origin);
+//         (existe) ? callback(null, true) : callback(new Error('You are not access'))
+//     } 
+// }
+// server.use(cors(corsOptions))
+server.use(cors())
 // Connecting MongoDB
 connectingDB();
 
