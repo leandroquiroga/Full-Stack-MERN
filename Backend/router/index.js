@@ -3,9 +3,9 @@ import { registerNewTask, pageIndex, editTask, getHomework, deleteTask } from ".
 
 const router = Express.Router();
 
-router.get('/', pageIndex);
+router.get('/task', pageIndex);
 
-router.post('/newtask', registerNewTask);
+router.post('/', registerNewTask);
 
 router.put('/:id', editTask);
 
