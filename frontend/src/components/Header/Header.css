@@ -1,12 +1,43 @@
 .header{
     width: 100%;
-    height: 60vh;
+    height: 80vh;
     background-image: url(./../../../public/assets/img/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
+    background-position: center center;
 }
-
-.article-header--title{
+.header-container--title{
     font: 600 2rem 'Montserrat', sans-serif;
+    z-index: 10;
+}
+.header-container--form{
+    background-color: transparent;
+}
+.header-container--contentForm{
+    backdrop-filter: blur(5rem);
+    background-color: #f7f7f719;
+}
+.header-container--form-inputs{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    color:#fff;
+    margin: 10px 0;
+    font: 400 .8rem 'Montserrat', sans-serif;
+}
+.header-container--form-label{
+    font: 400 1rem 'Montserrat', sans-serif;
+}
+.header--container--form--btn{
+    background-color: #bf0f52;
+    color: #FFFFFF;
+}
+.header--container--form--btn:hover{
+    background-color: #e81666;
+    color: #FFFFFF;
+}
+.header-container--message,
+.header-container--form-invalid{
+    font: 600 1rem 'Montserrat', sans-serif;
 }

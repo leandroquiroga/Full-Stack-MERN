@@ -7,6 +7,16 @@
     place-items: center;
 }
 
+.main-container--title{
+    font: 600 2rem 'Monserrat', sans-serif;
+}
 .main-card--title{
+    font: 400 1.2rem 'Monserrat', sans-serif;
+}
+
+.main-card--task{
     font: 400 1rem 'Monserrat', sans-serif;
+}
+.main-card--date{
+    font: 400 .9rem 'Monserrat', sans-serif;
 }
