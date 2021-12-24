@@ -2,3 +2,4 @@ Backend/node_modules
 Backend/variables.env
 Backend/database.json
 package-lock.json
+frontend/node_modules
