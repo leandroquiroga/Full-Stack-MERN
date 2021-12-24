@@ -5,7 +5,7 @@ const router = Express.Router();
 
 router.get('/task', pageIndex);
 
-router.post('/', registerNewTask);
+router.post('/task', registerNewTask);
 
 router.put('/:id', editTask);
 
