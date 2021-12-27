@@ -42,17 +42,13 @@ const registerNewTask = async (req, res, next) => {
  
 // Update a task in the databes by it ID
 const editTask = async (req, res, next) => {
-    const { name, task, complete, date, hours } = req.body; 
+    const {  complete } = req.body; 
     let id = req.params.id;
 
     try {
         let taskUpdate = await ApplicationSchema.findOneAndUpdate({ _id: id }, {
             $set: {
-                name,
-                task,
                 complete,
-                date,
-                hours
             }
         }, { new: true });
 
