@@ -10,19 +10,20 @@ import Main from './components/Main/Main';
 function App() {
 
   const [list_Task, saveList_Task] = useState([]);
-  const [stateRefresh, changeStateRefresh] = useState(true)
+  const [stateRefresh, changeStateRefresh] = useState(true);
+  const [completeTask, setCompleteTask] = useState(false);
 
   useEffect(() => {
     if (stateRefresh) { 
       const api = () => {
         clientAxios.get('/task')
         .then(response => {
-            saveList_Task(response.data)
-            
+          saveList_Task(response.data);
             // disabled stateRefresh
-            changeStateRefresh(false)
-          }) 
-          .catch(error => console.log(error))
+          changeStateRefresh(false);
+          // (response.data.complete) ? setCompleteTask(true) : setCompleteTask(false);
+        }) 
+        .catch(error => console.log(error))
       }
       api()
     }
@@ -40,6 +41,9 @@ function App() {
       /> 
       <Main
         tasks={list_Task}
+        setCompleteTask={setCompleteTask}
+        completeTask={completeTask}
+        changeStateRefresh={changeStateRefresh}
       />
       {/* <Footer />  */}
     </section>
