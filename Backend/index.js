@@ -10,15 +10,6 @@ dotenv.config({ path: 'variables.env' });
 // Creater Server
 const server = Express(); 
 
-// Enable cors
-// const whitelist = ['http://localhost:3000'];
-// const corsOptions = {
-//     origin: (origin, callback) => {
-//         const existe = whitelist.some(dominio => dominio === origin);
-//         (existe) ? callback(null, true) : callback(new Error('You are not access'))
-//     } 
-// }
-// server.use(cors(corsOptions))
 server.use(cors())
 // Connecting MongoDB
 connectingDB();
