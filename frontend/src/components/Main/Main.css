@@ -10,6 +10,11 @@
 .main-container--title{
     font: 600 2rem 'Monserrat', sans-serif;
 }
+
+.main-container--card{
+    backdrop-filter: blur(5rem);
+    background-color: #f7f7f719;
+}
 .main-card--title{
     font: 400 1.2rem 'Monserrat', sans-serif;
 }
@@ -17,6 +22,21 @@
 .main-card--task{
     font: 400 1rem 'Monserrat', sans-serif;
 }
-.main-card--date{
+.main-card--date, .main-card--task{
     font: 400 .9rem 'Monserrat', sans-serif;
+}
+
+.form-check-input:checked {
+    background-color: #58e48b;
+    border-color: #00b341;
+}
+
+.form-check-input:focus {
+    border-color: #49cc79;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 253, 101, 0.25)
+}
+
+.form-switch .form-check-input:focus {
+    background-image: url(./../../assets/svg/complete_task.svg);
 }
