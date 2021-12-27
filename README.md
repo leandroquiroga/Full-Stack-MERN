@@ -1,6 +1,32 @@
 # Todo List - Full-Stack MERN 📝
 Este proyecto fue realizado con MongoDB, Express, Node.js y React.js (MERN). En este proyecto podemos tener nuestras tareas mejor organizadas, de tal manera que se nos queda guarda en una base de datos. Podemos realizar las 4 operaciones basicas CRUD (Create, Read, Update and Delete ). <br><br>
-Mediante un formulario realizamos la primera operacion basica (Create) pero antes cumplir con los requisitos previos que es TODOS los campos deben estar completos, luego una vez cargado los datos nuevos los envia a la base de datos para ser leidos (READ) y mostralos en forma de card en nuestras pantallas. Cuando decimos que podemos editar es solo para editar si la tarea fue completada o no, de esta manera podemos eliminarla tanto sea de la UI y la base de datos. 
+Mediante un formulario realizamos la primera operacion basica (Create) pero antes cumplir con los requisitos previos que es TODOS los campos deben estar completos <br>
+### Validacion
+
+
+https://user-images.githubusercontent.com/80013958/147423551-0938f363-7ded-4914-95ed-c702bf882560.mp4
+
+
+Luego una vez cargado los datos nuevos los envia a la base de datos para ser leidos (READ) y mostralos en forma de card en nuestras pantallas. <br>
+### Envio de datos
+
+https://user-images.githubusercontent.com/80013958/147423562-e6faa9fd-5a94-4d69-8097-606a84a3fb0b.mp4
+
+
+
+Cuando decimos que podemos editar es solo para editar si la tarea fue completada o no <br>
+
+### Manipular el estado de la tarea   
+
+
+https://user-images.githubusercontent.com/80013958/147423576-fb9c1274-b20b-4d19-94b2-9a45ca00b201.mp4
+
+
+De esta manera podemos eliminarla tanto sea de la UI y la base de datos. <br> 
+
+https://user-images.githubusercontent.com/80013958/147423594-6e561d03-bbd8-421d-b408-d5b8d15aa2c7.mp4
+
+
 
 # Construido con 🛠️
 * React.js
