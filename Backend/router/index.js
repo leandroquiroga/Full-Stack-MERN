@@ -7,10 +7,10 @@ router.get('/task', pageIndex);
 
 router.post('/task', registerNewTask);
 
-router.put('/:id', editTask);
+router.put('/task/:id', editTask);
 
-router.get('/:id', getHomework)
+router.get('/task/:id', getHomework)
 
-router.delete('/:id', deleteTask);
+router.delete('/task/:id', deleteTask);
 
 export default router;
